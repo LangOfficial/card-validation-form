@@ -6,6 +6,8 @@ import Background from "./components/Background";
 import InputSection from "./components/InputSection";
 import Error from "./components/Error";
 
+import Checkmark from "./images/icon-complete.svg";
+
 export interface CardContextProps {
   cardName: string;
   cardNumber: string;
@@ -253,7 +255,7 @@ function App() {
             <div className="flex flex-col items-center justify-center px-6 halfxl:ml-96 w-full">
               <img
                 className="mb-12 mt-20"
-                src="../src/images/icon-complete.svg"
+                src={Checkmark}
                 alt=""
               />
               <h1 className="mb-6 text-4xl uppercase tracking-widest">
